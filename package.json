@@ -1,0 +1,19 @@
+{
+  "name": "fresnel-lighthouse-webgpu",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "verify": "node --experimental-strip-types scripts/verify-physics.ts",
+    "smoke": "node scripts/browser-smoke.mjs"
+  },
+  "devDependencies": {
+    "@webgpu/types": "^0.1.60",
+    "puppeteer-core": "^25.18.1",
+    "typescript": "^5.8.3",
+    "vite": "^7.0.0"
+  }
+}
